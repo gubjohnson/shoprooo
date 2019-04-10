@@ -1,0 +1,50 @@
+:root {
+  --navColor: #d9001b;
+  --sloganColor: #f79526;
+  --red: #d9001b;
+  --orange: #f79526;
+  --blue: #02a7f0;
+  --green: #70b603;
+  --yellow: #f7f126;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--navColor);
+}
+
+button {
+  color: #fff;
+  background-color: #940815;
+  border-radius: 5px;
+  border: 0;
+  padding: 5px;
+  margin-left: 5px;
+  outline: none;
+  border: 1px solid #d9001b;
+}
+
+button:hover {
+  color: #940815;
+  background-color: #fff;
+  border: 1px solid #d9001b;
+}
+
+table {
+  margin: 20px auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
