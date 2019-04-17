@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css" /> -->
     <link rel="stylesheet" href="./css/footer2.css" />
+    <link
+      rel="stylesheet"
+      href="./images/font_1147143_57kisix6x1g/iconfont.css"
+    />
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -179,7 +183,7 @@
           水杯水壶
         </div>
         <span class="breadcrumbs-path">></span>
-        <div class="breadcrumbs-path">
+        <div class="breadcrumbs-path show">
           日本星巴克2019樱花限定第二弹 双层随行杯473ml
         </div>
       </div>
@@ -227,20 +231,27 @@
             【杨-2019樱花限定】
           </div>
           <div class="item-detail-price">
-            价格：<span>$</span><span>54.90</span> 评价：已有
-            <span>0</span> 人评价, 100%好评
+            价格:<span>$</span><span>54.90</span> 评价:
+            <i class="iconfont star">&#xe629;</i>
+            <i class="iconfont star">&#xe629;</i>
+            <i class="iconfont star">&#xe629;</i>
+            <i class="iconfont star">&#xe629;</i>
+            <i class="iconfont star">&#xe629;</i>
+            已有 <span>0</span> 人评价, 100%好评
           </div>
           <div class="item-detail-service">
-            服务： 满$69包邮 100%正品保障 购物获赠shoprooo豆
+            服务: <i class="iconfont service">&#xe638;</i> 满$69包邮
+            <i class="iconfont service">&#xe6c6;</i> 100%正品保障
+            <i class="iconfont service">&#xe63a;</i> 购物获赠shoprooo豆
           </div>
           <div class="item-detail-limit">
-            限制： 改商品每人限购2件
+            限制: 改商品每人限购2件
           </div>
           <div class="item-detail-delivery">
-            发货： 悉尼仓, 15:00之前下单,预计今天发货
+            发货: 悉尼仓, 15:00之前下单,预计今天发货
           </div>
           <div class="item-detail-model">
-            型号：
+            型号:
             <div class="item-detail-models">
               樱花超薄400ml
             </div>
@@ -271,7 +282,7 @@
         </div>
       </div>
       <div class="row item-mainSection">
-        <div class="col-lg-3 col-md-4 col-sm-12">
+        <div id="colChange" class="col-lg-3 col-md-4 col-sm-12 order-last">
           <div class="otherBrand">
             <div class="otherBrand-head">同类其他品牌</div>
             <table class="otherBrand-table">
@@ -467,4 +478,21 @@
       </div>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+      //获取浏览器宽度
+      var _width = $(window).width();
+      if (_width < 767) {
+        //直接为该div添加样式,会覆盖前一个样式
+        $("#colChange").addClass("order-last");
+
+        //修改该div的class属性值为
+        // $("#colChange").attr("class", "col-lg-3 col-md-4 col-sm-12 order_last");
+      } else {
+        //移除该div原本的样式，并添加这个样式
+        $("#colChange").removeClass("order-last");
+      }
+    });
+  </script>
 </html>
