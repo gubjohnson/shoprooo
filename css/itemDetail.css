@@ -469,6 +469,12 @@ li {
   }
 }
 
+@media screen and (max-width: 349px) and (min-width: 320px) {
+  .item-content-head li {
+    padding: 2px 2px 5px;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .shoprooo-searchBar {
     padding-top: 10px;
