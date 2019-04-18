@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/footer2.css" />
     <link
       rel="stylesheet"
-      href="./images/font_1147143_57kisix6x1g/iconfont.css"
+      href="./images/font_1147143_uwajw546bv/iconfont.css"
     />
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -107,7 +107,9 @@
                 <a class="nav-link" href="#">商家中心</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">购物车</a>
+                <a class="nav-link" href="#"
+                  >购物车<span class="shopping-cart-num">0</span></a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">客服中心</a>
@@ -157,10 +159,10 @@
         </div>
       </div>
       <div class="shoprooo-catagories row">
-        <div class="catagories-all col-lg-2">
-          <span>全部商品</span>
+        <div class="catagories-all col-lg-2 col-md-2">
+          全部商品&nbsp;<i class="iconfont">&#xe62e;</i>
         </div>
-        <div class="catagories-hot col-lg-10">
+        <div class="catagories-hot col-lg-10 col-md-10">
           <ul>
             <li><a href="http://">美妆馆</a></li>
             <li><a href="http://">潮流先锋</a></li>
@@ -175,12 +177,12 @@
       <div class="shoprooo-breadcrumbs">
         <div class="breadcrumbs-head">家居生活</div>
         <span class="breadcrumbs-path">></span>
-        <div class="breadcrumbs-path-border">
-          生活日用
+        <div class="breadcrumbs-item-a">
+          生活日用&nbsp;<i class="iconfont">&#xe62e;</i>
         </div>
         <span class="breadcrumbs-path">></span>
-        <div class="breadcrumbs-path-border">
-          水杯水壶
+        <div class="breadcrumbs-item-b">
+          水杯水壶&nbsp;<i class="iconfont">&#xe62e;</i>
         </div>
         <span class="breadcrumbs-path">></span>
         <div class="breadcrumbs-path show">
@@ -220,7 +222,8 @@
           </div>
           <div class="item-detail-code">
             商品编号：KB006450
-            <a href="http://">分享</a> <a href="http://">收藏</a>
+            <a href="http://"><i class="iconfont service">&#xe655;</i> 分享</a>
+            <a href="http://"><i class="iconfont service">&#xe61a;</i>收藏</a>
           </div>
         </div>
         <div class="item-detail-right col-lg-6 col-md-6 col-sm-12">
@@ -231,7 +234,7 @@
             【杨-2019樱花限定】
           </div>
           <div class="item-detail-price">
-            价格:<span>$</span><span>54.90</span> 评价:
+            价格:<span>$</span><span class="price">54.90</span> 评价:
             <i class="iconfont star">&#xe629;</i>
             <i class="iconfont star">&#xe629;</i>
             <i class="iconfont star">&#xe629;</i>
@@ -277,7 +280,12 @@
             </div>
           </div>
           <div class="item-detail-addCart">
-            <button class="item-detail-btn">加入购物车</button>
+            <button class="item-detail-btn">
+              <i class="iconfont">&#xe762;</i> 立即购买
+            </button>
+            <button class="item-detail-btn1">
+              <i class="iconfont">&#xe618;</i> 加入购物车
+            </button>
           </div>
         </div>
       </div>
@@ -378,10 +386,10 @@
                 <li class="item-active">产品详情</li>
                 <li class="">用户评价(3)</li>
               </ul>
-              <div class="item-content-addCart">
+              <!-- <div class="item-content-addCart">
                 <span>$89.90</span>
                 <button class="item-content-btn">加入购物车</button>
-              </div>
+              </div> -->
             </div>
             <div class="item-description">
               <div class="item-description-img">
@@ -477,6 +485,64 @@
         </div>
       </div>
     </div>
+    <!-- 页面上的各种浮窗 -->
+    <!-- 全部商品 -->
+    <div class="catagories-list">
+      <ul>
+        <li>
+          <h4>
+            
+            <a href="http://"><i class="iconfont">&#xe62a;</i>&nbsp;美妆个护</a>
+          </h4>
+          <div class="catagories-list-content">
+            <a href="http://">面膜贴</a>
+            <a href="http://">化妆水&nbsp;爽肤水</a>
+            <a href="http://">乳液&nbsp;面霜</a>
+            <a href="http://">眼唇保养</a>
+          </div>
+        </li>
+        <li>
+          <h4>
+            
+            <a href="http://"><i class="iconfont">&#xe60b;</i>&nbsp;家居数码</a>
+          </h4>
+          <div class="catagories-list-content">
+            <a href="http://">衣服清洁</a>
+            <a href="http://">厨房餐饮</a>
+            <a href="http://">母婴洗护</a>
+            <a href="http://">驱虫防臭</a>
+          </div>
+        </li>
+        <li>
+          <h4>
+            
+            <a href="http://"><i class="iconfont">&#xe61c;</i>&nbsp;美味零食</a>
+          </h4>
+          <div class="catagories-list-content">
+            <a href="http://">方便面</a>
+            <a href="http://">豆干辣条</a>
+            <a href="http://">面包糕点</a>
+            <a href="http://">饼干酥饼</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 面包屑浮窗 -->
+    <div class="breadcrumbs-item-list-a">
+      <ul>
+        <li><a href="http://">居家清洁</a></li>
+        <li><a href="http://">3c数码</a></li>
+        <li><a href="http://">生活用品</a></li>
+        <li><a href="http://">母婴用品</a></li>
+      </ul>
+    </div>
+    <div class="breadcrumbs-item-list-b">
+      <ul>
+        <li><a href="http://">厨房餐饮</a></li>
+        <li><a href="http://">水杯水壶</a></li>
+        <li><a href="http://">纸品湿巾</a></li>
+      </ul>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
@@ -494,5 +560,66 @@
         $("#colChange").removeClass("order-last");
       }
     });
+
+    // 页面浮窗
+    $(".catagories-all,.catagories-list").hover(
+      function() {
+        var localOffset = $(".catagories-all").offset();
+        $(".catagories-list").show();
+        $(".catagories-list").css("left", localOffset.left + "px");
+        $(".catagories-list").css("top", localOffset.top + 30 + "px");
+        // $(".catagories-all").addClass("breadcrumbs-item-active");
+        $(".catagories-all")
+          .children("i")
+          .html("&#xe62d;");
+      },
+      function() {
+        $(".catagories-list").hide();
+        // $(".catagories-all").removeClass("breadcrumbs-item-active");
+        $(".catagories-all")
+          .children("i")
+          .html("&#xe62e;");
+      }
+    );
+
+
+    $(".breadcrumbs-item-a,.breadcrumbs-item-list-a").hover(
+      function() {
+        var localOffset = $(".breadcrumbs-item-a").offset();
+        $(".breadcrumbs-item-list-a").show();
+        $(".breadcrumbs-item-list-a").css("left", localOffset.left + "px");
+        $(".breadcrumbs-item-list-a").css("top", localOffset.top + 25 + "px");
+        $(".breadcrumbs-item-a").addClass("breadcrumbs-item-active");
+        $(".breadcrumbs-item-a")
+          .children("i")
+          .html("&#xe62d;");
+      },
+      function() {
+        $(".breadcrumbs-item-list-a").hide();
+        $(".breadcrumbs-item-a").removeClass("breadcrumbs-item-active");
+        $(".breadcrumbs-item-a")
+          .children("i")
+          .html("&#xe62e;");
+      }
+    );
+    $(".breadcrumbs-item-b,.breadcrumbs-item-list-b").hover(
+      function() {
+        var localOffset = $(".breadcrumbs-item-b").offset();
+        $(".breadcrumbs-item-list-b").show();
+        $(".breadcrumbs-item-list-b").css("left", localOffset.left + "px");
+        $(".breadcrumbs-item-list-b").css("top", localOffset.top + 25 + "px");
+        $(".breadcrumbs-item-b").addClass("breadcrumbs-item-active");
+        $(".breadcrumbs-item-b")
+          .children("i")
+          .html("&#xe62d;");
+      },
+      function() {
+        $(".breadcrumbs-item-list-b").hide();
+        $(".breadcrumbs-item-b").removeClass("breadcrumbs-item-active");
+        $(".breadcrumbs-item-b")
+          .children("i")
+          .html("&#xe62e;");
+      }
+    );
   </script>
 </html>

@@ -1,3 +1,7 @@
+a:hover {
+  color: var(--red);
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -32,7 +36,8 @@ li {
   /* padding-left: 150px; */
 }
 
-.shoprooo-search {
+.shopping-cart-num {
+  color: #f40;
 }
 
 .shoprooo-logo {
@@ -73,6 +78,7 @@ li {
 .catagories-all {
   background-color: var(--red);
   color: var(--white);
+  cursor: pointer;
 }
 
 .shoprooo-catagories ul {
@@ -92,6 +98,7 @@ li {
   font-size: 1.5rem;
   color: #555;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .breadcrumbs-path {
@@ -100,12 +107,20 @@ li {
   align-items: center;
 }
 
-.breadcrumbs-path-border {
+.breadcrumbs-item-a,
+.breadcrumbs-item-b {
   margin-right: 5px;
   margin-top: 5px;
   align-items: center;
-  border: 1px solid #555;
+  border: 1px solid var(--grey);
   padding: 0 5px;
+  cursor: pointer;
+}
+
+.breadcrumbs-item-active {
+  border: 1px solid var(--red);
+  border-bottom: 1.2px solid var(--white);
+  z-index: 999;
 }
 
 /* **************** 类别模块结束 ******************** */
@@ -298,16 +313,32 @@ li {
 }
 
 .item-detail-btn {
-  margin-left: 10%;
+  color: var(--red);
+  background: var(--white);
+  padding: 5px 10px;
+  border: 1px solid var(--red);
+  border-radius: 2px;
+}
+
+.item-detail-btn1 {
+  margin-left: 2%;
   color: var(--white);
   background: var(--red);
-  padding: 5px;
+  padding: 5px 10px;
   border: 1px solid var(--red);
+  border-radius: 2px;
 }
 
 .item-detail-btn:hover {
-  color: var(--red);
-  background: var(--white);
+  filter: alpha(Opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.item-detail-btn1:hover {
+  filter: alpha(Opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* *** 产品主内容 ***** */
@@ -434,10 +465,107 @@ li {
 }
 /* ************* 产品详情结束 ********************** */
 
+/* ******************* 页面浮窗 ******************** */
+.breadcrumbs-item-list-a,
+.breadcrumbs-item-list-b {
+  /* width: 250px; */
+  padding: 5px;
+  color: #000;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid var(--red);
+  display: none;
+  z-index: 0;
+}
+
+.breadcrumbs-item-list-a ul,
+.breadcrumbs-item-list-b ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.breadcrumbs-item-list-a li,
+.breadcrumbs-item-list-b li {
+  padding: 0 10px;
+}
+
+.catagories-list {
+  background-color: #424242;
+  color: var(--white);
+  width: 190px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding: 10px 2%;
+}
+
+.catagories-list a {
+  color: var(--white);
+}
+
+.catagories-list a:hover {
+  color: var(--red);
+}
+
+.catagories-list-content {
+  margin-bottom: 10px;
+}
+
+/* **************** 页面浮窗结束 ******************* */
+
 /* **************** 响应式 ******************* */
-@media screen and (max-width: 577px) {
-  .shoprooo-searchBar {
-    padding-top: 0;
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .catagories-list {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .catagories-list {
+    width: 120px;
+  }
+  .catagories-list h4 {
+    font-size: 1.1rem;
+  }
+  .catagories-list a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .item-detail-imgL {
+    width: 100%;
+  }
+  .item-detail-code {
+    margin-top: 10px;
+  }
+  .item-detail-title {
+    margin-top: 0;
+  }
+  .item-detail-subTitle {
+    margin-top: 0;
+  }
+
+  .item-detail-price {
+    padding: 10px 20px;
+  }
+  .item-detail-service {
+    margin-top: 0;
+  }
+  .item-detail-limit {
+    margin-top: 0;
+  }
+  .item-detail-delivery {
+    margin-top: 0;
+    padding-bottom: 5px;
+  }
+  .item-detail-quantity {
+    margin-top: 0;
+  }
+  .item-detail-addCart {
+    margin-top: 5px;
+  }
+  .shoprooo-catagories {
+    font-size: 1.2rem;
   }
 }
 
@@ -455,8 +583,14 @@ li {
   .item-detail-models {
     margin-bottom: 5px;
   }
-  .item-detail-btn {
-    margin-left: 40% !important;
+}
+
+@media screen and (max-width: 577px) {
+  .shoprooo-searchBar {
+    padding-top: 0;
+  }
+  .catagories-list {
+    width: 100%;
   }
 }
 
