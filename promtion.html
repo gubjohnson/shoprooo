@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="袋鼠购 购出生活精彩" />
+    <link
+      type="image/x-icon"
+      href="./images/header/shoppingcart.png"
+      rel="shortcut icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/promotionPage.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/footer2.css" />
+    <link
+      rel="stylesheet"
+      href="./images/font_1147143_uwajw546bv/iconfont.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./images/font_1147143_uwajw546bv/iconfont.css"
+    />
+    <title>活动页面</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav-info shoprooo-nav">
+      <div class="container head_box">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">欢迎来到袋鼠购！</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-home"
+            aria-controls="navbar-home"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-home">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a id="login-home" class="nav-link" href="./login.html"
+                  >请登录<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="register"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  免费注册
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./register.html">会员注册</a>
+                  <a class="dropdown-item" href="./registerC.html">商家注册</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-dark">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="shopping"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  我的袋鼠购
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">我的订单</a>
+                  <a class="dropdown-item" href="#">我的订单</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">商家中心</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >购物车<span class="shopping-cart-num">0</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">客服中心</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">追踪订单</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="language"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  切换语言
+                </a>
+                <div class="dropdown-menu" aria-labelledby="language">
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">中文</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="row shoprooo-search">
+          <div class="col-lg-5 col-md-4 shoprooo-logo">
+            <div>
+              <a href="#"
+                ><img
+                  class="navLogo1"
+                  src="./images/logo_icon_87.png"
+                  alt="logo_icon"/>
+                <img
+                  class="navLogo2"
+                  src="./images/袋鼠购白色207_110.png"
+                  alt="logo_shoprooo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-8 shoprooo-searchBar">
+            <div class="slogan">
+              袋鼠购 购出精彩生活！
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="搜索 购书购 商品/品牌/店铺"
+                aria-label="Search"
+              />
+              <button class="btn my-2 my-sm-0 search-btn" type="submit">
+                搜袋鼠购
+              </button>
+              <button class="btn my-2 my-sm-0 search-btn" type="submit">
+                搜本店
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 推销栏 -->
+    <div class="promotion-item">
+      <div class="container">
+        <ul class="row  justify-content-md-center">
+          <li class="col"><a href="#">限时秒杀</a></li>
+          <li class="col"><a href="#">热销产品</a></li>
+          <li class="col"><a href="#">今日特选</a></li>
+          <li class="col"><a href="#">袋鼠购优惠券</a></li>
+          <li class="col"><a href="#">猜你喜欢</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="quickSale row">
+        <div class="col-12 quickSale-readMore">
+          <a href="#">查看更多</a>
+        </div>
+        <div class="quickSale-banner col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <span>SHOPROOO</span>
+          <span>限时秒杀</span>
+          <div class="count-down">
+            <span class="count-down-text">距离本场结束</span>
+            <span class="count-down-num count-down-hour">02</span>
+            <span class="count-down-num count-down-min">03</span>
+            <span class="count-down-num count-down-sec">25</span>
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="quickSale row">
+        <div class="col-12 quickSale-readMore">
+          <a href="#">换一批</a>
+        </div>
+        <div class="hotSale-banner col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <span>SHOPROOO</span>
+          <span>热销产品</span>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="quickSale row">
+        <div class="col-12 quickSale-readMore">
+          <a href="#">查看更多</a>
+        </div>
+        <div class="todaySpecial-banner col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <span>SHOPROOO</span>
+          <span>今日特价</span>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+        <div class="quickSale-item col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="quickSale-img">
+            <a href="#">
+              <img src="./images/限时秒杀/srmsale1.jpg" alt="" />
+              <div>佳能Power Shot G7S</div>
+              <div>AU 389.00</div>
+            </a>
+          </div>
+          <div class="quickSale-btn">
+            <button class="btn">立刻购买</button>
+            <img src="./images/shoppingcarred.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row coupon ">
+        <div class="coupon-banner col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <span>SHOPROOO</span>
+          <span>优惠券</span>
+          <div class="coupon-content">
+            <span class="coupon-content-text">领券中心</span>
+            <span class="coupon-content-slogan">满就送</span>
+          </div>
+        </div>
+        <div
+          class="coupon-item offset-lg-1 col-xl-3 col-lg-3 col-md-4 col-sm-12"
+        >
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon3.png" alt=""/></a>
+          </div>
+
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon3.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="coupon-item col-xl-3 col-lg-3 col-md-4 col-sm-12">
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="coupon-item col-xl-3 col-lg-3 col-md-4 col-sm-12 ">
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="coupon-item-sm col-xl-2 col-lg-2 col-md-4 col-sm-12">
+          <div class="coupon-img-sm">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+
+          <div class="coupon-img-sm">
+            <a href="#"><img src="./images/优惠卷/srmcoupon1.png" alt=""/></a>
+          </div>
+        </div>
+        <div
+          class="coupon-item offset-lg-1 col-xl-3 col-lg-3 col-md-4 col-sm-12"
+        >
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon3.png" alt=""/></a>
+          </div>
+
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon3.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="coupon-item col-xl-3 col-lg-3 col-md-4 col-sm-12">
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon1.png" alt=""/></a>
+          </div>
+        </div>
+        <div class="coupon-item col-xl-3 col-lg-3 col-md-4 col-sm-12">
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+
+          <div class="coupon-img">
+            <a href="#"><img src="./images/优惠卷/srmcoupon2.png" alt=""/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="advantage">
+        <div class="container">
+          <div class="advantage-content row ">
+            <div class="advantage-col col-lg-3 col-md-6 col-sm-6">
+              <span class="advantage-pic">优</span>
+              <div class="advantage-a">
+                <span class="advantage-hd">品质保障</span>
+                <span class="advantage-text">品质护航 购物无忧</span>
+              </div>
+            </div>
+            <div class="advantage-col col-lg-3 col-md-6 col-sm-6">
+              <span class="advantage-pic">七</span>
+              <div class="advantage-a">
+                <span class="advantage-hd">七天无理由退换货</span>
+                <span class="advantage-text">为你提供售后无忧保障</span>
+              </div>
+            </div>
+            <div class="advantage-col col-lg-3 col-md-6 col-sm-6">
+              <span class="advantage-pic">特</span>
+              <div class="advantage-a">
+                <span class="advantage-hd">特色服务体验</span>
+                <span class="advantage-text">为你呈现不一样的服务</span>
+              </div>
+            </div>
+            <div class="advantage-col col-lg-3 col-md-6 col-sm-6">
+              <span class="advantage-pic">帮</span>
+              <div class="advantage-a">
+                <span class="advantage-hd">帮助中心</span>
+                <span class="advantage-text">您的购物指南</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-description row">
+          <div class="footer-description-content col-lg-2 col-md-4 col-6">
+            <span class="footer-description-hd">购物指南</span>
+            <span><a href="#">免费注册</a></span>
+            <span><a href="#">开通支付宝</a></span>
+            <span><a href="#">购物车</a></span>
+          </div>
+          <div class="footer-description-content col-lg-2 col-md-4 col-6">
+            <span class="footer-description-hd">袋鼠购保障</span>
+            <span><a href="#">发票保障</a></span>
+            <span><a href="#">售后规则</a></span>
+            <span><a href="#">缺货赔付</a></span>
+            <span><a href="#">追踪订单</a></span>
+          </div>
+          <div class="footer-description-content col-lg-2 col-md-4 col-6">
+            <span class="footer-description-hd">关于我们</span>
+            <span><a href="#">关于袋鼠购</a></span>
+            <span><a href="#">袋鼠购简介</a></span>
+            <span><a href="#">袋鼠购故事</a></span>
+          </div>
+          <div class="footer-description-content col-lg-2 col-md-4 col-6">
+            <span class="footer-description-hd">支付方式</span>
+            <span><a href="#">快捷支付</a></span>
+            <span><a href="#">信用卡</a></span>
+            <span><a href="#">微信支付</a></span>
+            <span><a href="#">支付宝</a></span>
+          </div>
+          <div class="footer-description-content col-lg-2 col-md-4 col-6">
+            <span class="footer-description-hd">商家服务</span>
+            <span><a href="#">袋鼠购规则</a></span>
+            <span><a href="#">售后规则</a></span>
+            <span><a href="#">商家入驻</a></span>
+            <span><a href="#">商家中心</a></span>
+            <span><a href="#">流程服务</a></span>
+            <span><a href="#">运营服务</a></span>
+          </div>
+          <div class="footer-description-content col-lg-2 col-md-4 col-6">
+            <span class="footer-description-hd">帮助中心</span>
+            <span><a href="#">发票保障</a></span>
+            <span><a href="#">售后服务</a></span>
+            <span><a href="#">缺货赔付</a></span>
+            <span><a href="#">追踪订单</a></span>
+            <span><a href="#">常见问题</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script></script>
+</html>
