@@ -1,0 +1,100 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/* ************ 导航模块 ***************** */
+.navbar-brand {
+  font-size: 14px;
+}
+.shoprooo-nav {
+  background-color: var(--red);
+}
+
+.head_box a {
+  color: var(--white) !important;
+}
+
+.head_box a:hover {
+  background-color: var(--white);
+  color: var(--red) !important;
+}
+
+.shopping-cart-num {
+  color: var(--white);
+}
+
+.shoprooo-search {
+  /* padding: 10px 0 20px; */
+  padding-bottom: 5px;
+  margin-top: -10px;
+}
+
+.shoprooo-logo {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.shoprooo-logo div {
+  display: inline-block;
+}
+
+.navLogo1 {
+  width: 20%;
+  border-right: 1px solid var(--white);
+  padding-right: 10px;
+}
+
+.navLogo2 {
+  margin-left: 10px;
+  width: 30%;
+}
+
+.shoprooo-searchBar {
+  /* padding-top: 20px; */
+}
+
+.slogan {
+  color: var(--orange);
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.form-control {
+  width: 50% !important;
+}
+
+.search-btn {
+  margin-left: 10px;
+  background-color: var(--redDark);
+  color: var(--white);
+}
+/* ********************************** */
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .navLogo1 {
+    width: 40%;
+  }
+  .navLogo2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .form-control {
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .form-control {
+    width: 100% !important;
+  }
+  .search-btn {
+    margin: 0 5px 0 0;
+  }
+}

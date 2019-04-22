@@ -24,6 +24,7 @@ a {
 
 a:hover {
   color: var(--red);
+  text-decoration: none;
 }
 
 ul {
@@ -33,4 +34,10 @@ ul {
 
 li {
   list-style: none;
+}
+
+/* ***** iconfont ***** */
+.star {
+  color: #fdad0c;
+  font-size: 0.9rem !important;
 }
