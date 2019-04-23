@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <!-- Bootstrap -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <!-- CSS -->
+       <link
+       type="image/x-icon"
+       href="./images/header/shoppingcart.png"
+       rel="shortcut icon"
+     />
+       <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+       <link rel="stylesheet" href="css/reset.css">
+       <link rel="stylesheet" href="./images/iconfont/iconfont.css">
+       <link rel="stylesheet" href="./css/cart.css">
+       <link rel="stylesheet" href="./css/common.css">
+    <title>购物车</title>
+</head>
+<body>
+    <div class="cartWrapper">
+       <header class="header">
+            <div class="nav-info">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                         <a class="navbar-brand shoprooo-welcome" href="#">欢迎来到袋鼠购！</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-home" aria-controls="navbar-home" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="navbar-home">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a id="login-home" class="nav-link login-home" href="./login.html">Emily</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="register" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="iconfont icon-sm">&#xe602;</i>&nbsp消息
+                                </a>
+                            </li>
+                        </ul>
+                            <ul  class = "navbar-nav navbar-light">
+                            
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="./index.html">袋鼠购首页</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                我的袋鼠购
+                                            </a> 
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">已有的订单</a>
+                                            <a class="dropdown-item" href="#">个人信息</a>                  
+                                            </div>                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" class= "shop-cart" href="#"> <i class="iconfont cart-p icon-sm">&#xe65c;</i>&nbsp;购物车&nbsp;&nbsp;<span class="product_total_num_in" >0</span>&nbsp;&nbsp;件</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">联系客服</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">商品分类</a>
+                                    </li>
+                                    
+                        </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="search row">
+                            <div class="search-log col-lg-4 col-md-4">
+                                <!-- <a><img src="./images/srlogo.png" alt="logo"> </a> -->
+                                <!-- <a class="shopping" href="">购物车</a> -->
+                                <a href="http://">
+                                    <div class="shoprooo-logo">
+                                        <img src="./images/srlogo.png" alt="logo">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 col-md-3 ">
+                                <div class="shopping-cart-title">
+                                    <i class="iconfont icon-lg">&#xe65c;</i> 购物车
+                                </div>
+                            </div>
+                            <div class="search-info col-lg-6 col-md-5">
+                                <div class="input-group mb-3">
+                                    <input class="form-control research-input" type="search" placeholder="搜索 购书 商品/品牌/店铺" aria-label="Search">
+                                    <button class="btn my-sm-0 input-group-append" type="button">搜索</button>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+       </header>
+       <section class="main-cart">
+          <div class="cart-title">
+              <ul>
+                  <li class="active"><a >全部商品<span class="product_total_num_in">0</span></a></li>        
+                  <li><a>降价商品<span >0</span></a></li>
+                  <li><a class="ne">库存紧张<span>0</span></a></li>
+              </ul>
+              <div class="chooseP">
+                  <span>已选商品（不含运费）</span>   
+                  <span class="account total">0 &nbsp;</span> <span>元</span>
+                   <input type="button" class="settlement" value="结算">
+              </div>
+          </div>
+          <div class="content" id="content">
+            <form action="" method="post" name="shopform">
+                <table width="100%" cellspacing="0" cellpadding="0" id="shopping-cart" class="shopping-cart">        
+                    <tr class="shopping-cart-title">
+                        <td class="title_1">
+                            
+                                <input type="checkbox" id="allCheckBox" class="cart-checkbox allCheckBox" />
+                                &nbsp;&nbsp;全选
+                            
+                            <!-- <input class="cart-checkbox allCheckBox "  type="checkbox" id="allCheckBox" value=""/>全选 -->
+                        </td>
+                        <td class="title_2" colspan="2">商品信息</td>
+                        <td class="title_3"></td>
+                        <td class="title_4">单价</td>
+                        <td class="title_5">数量</td>
+                        <td class="title_6">小计</td>
+                        <td class="title_7">操作</td>
+                    </tr>
+                    <tr >
+                        <td colspan="8" class="line"></td>
+                    </tr>
+                    <tr >
+                        <td colspan="8" class="shopInfo"><input class="shopAllCheckBox" type="checkbox" value=""/> 店铺：<a href="#">窗边的黑豆豆</a>&nbsp;<a href="#">黑豆豆</a> <i class="iconfont">&#xe60f;</i></td>
+                    </tr>
+                    <tr id="product1" class="shopping-cart-item">
+                        <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1"/></td>
+                        <td class="cart_td_2"><img src="./images/beauty/srmfb_1.jpg"  width="10%" alt="shopping"/></td>
+                        <td class="cart_td_3"><a href="#">日韩流行风时尚手表</a><br />
+                        <span><i class="iconfont">&#xe681;<i class="iconfont">&#xe62c;</i></span></td>
+                        <!-- <td class="cart_td_4">5</td> -->
+                            <td class="cart_td_4">
+                              
+                              <span class="cart_td_4_w">
+                                 <!-- <span class="change">修改</span>  -->
+                                <span>颜色分类：白色</span> <span>尺码：XS</span></span></td>
+                        <td class="cart_td_5">138.00</td>
+                        <td class="cart_td_6">
+                            <span class="cart_td_6_bg">
+                            <i class="iconfont hand">&#xe794;</i>
+                             <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/> 
+                             <i class="iconfont hand">&#xe632;</i>
+                            </span></td>
+                        <td class="cart_td_7"></td>
+                        <td class="cart_td_8"><a href="javascript:void(0);">删除</a></td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="8" class="shopInfo"><input class="shopAllCheckBox" type="checkbox" value=""/>店铺：<a href="#">窗边的蓝豆豆</a>&nbsp;<a href="#">蓝豆豆</a> <i class="iconfont">&#xe60f;</i></td>
+                    </tr>
+                    <tr id="product2" class="shopping-cart-item">
+                        <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product2" /></td>
+                        <td class="cart_td_2"><img src="./images/beauty/srmfb_7.jpg"  width="10%" alt="shopping"/></td>
+                        <td class="cart_td_3"><a href="#">chanel/香奈尔/香奈尔炫亮魅力唇膏3.5g</a><br />
+                            <span><i class="iconfont">&#xe681;</i><i class="iconfont">&#xe62c;</i></span></td>
+                        <!-- <td class="cart_td_4">12</td> -->
+                        <td class="cart_td_4">
+                              
+                                <span class="cart_td_4_w">
+                                   <!-- <span class="change">修改</span>  -->
+                                  <span>颜色分类：白色</span> <span>尺码：XS</span></span></td>
+                        <td class="cart_td_5">265.00</td>
+                        <td class="cart_td_6"><span class="cart_td_6_bg"><i class="iconfont hand">&#xe794;</i> <input id="num_2" type="text"  value="1" class="num_input" readonly="readonly"/> <i class="iconfont hand">&#xe632;</i></span></td>
+                        <td class="cart_td_7"></td>
+                        <td class="cart_td_8"><a href="javascript:void(0);">删除</a></td>
+                    </tr>
+        
+                    <tr >
+                        <td colspan="8" class="shopInfo"><input class="shopAllCheckBox" type="checkbox" value=""/>店铺：<a href="#">窗边的小豆豆</a>&nbsp;<a href="#">小豆豆</a> <i class="iconfont">&#xe60f;</i></td>
+                    </tr>
+                    <tr id="product3" class="shopping-cart-item">
+                        <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product3"/></td>
+                        <td class="cart_td_2"><img src="images/beauty/srmfb_5.jpg" alt="shopping"/></td>
+                        <td class="cart_td_3"><a href="#">蝶妆海?蓝清滢粉底液10#（象牙白）</a><br />
+                            <span><i class="iconfont">&#xe681;</i><i class="iconfont">&#xe62c;</i></span></td>
+                        <!-- <td class="cart_td_4">3</td> -->
+                        <td class="cart_td_4">
+                              
+                                <span class="cart_td_4_w">
+                                   <!-- <span class="change">修改</span>  -->
+                                  <span>颜色分类：白色</span> <span>尺码：XS</span></span></td>
+                        <td class="cart_td_5">85.00</td>
+                        <td class="cart_td_6"><span class="cart_td_6_bg"><i class="iconfont hand">&#xe794;</i><input id="num_3" type="text"  value="1" class="num_input" readonly="readonly"/> <i class="iconfont hand">&#xe632;</i></span></td>
+                        <td class="cart_td_7"></td>
+                        <td class="cart_td_8"><a href="javascript:void(0);">删除</a></td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="8" class="shopInfo"><input class="shopAllCheckBox" type="checkbox" value=""/>店铺：<a href="#">窗边的红豆豆</a>&nbsp;<a href="#">红豆豆</a> <i class="iconfont">&#xe60f;</i></td>
+                    </tr>
+                    <tr id="product4" class="shopping-cart-item">
+                        <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product4"/></td>
+                        <td class="cart_td_2"><img src="images/beauty/srmfb_5.jpg" alt="shopping"/></td>
+                        <td class="cart_td_3"><a href="#">相宜促销专供 大S推荐 最好用的LilyBell化妆棉</a><br />
+                         <span>  <i class="iconfont">&#xe681;</i><i class="iconfont">&#xe62c;</i></span> </td>
+                        <!-- <td class="cart_td_4">12</td> -->
+                        <td class="cart_td_4">
+                              
+                                <span class="cart_td_4_w">
+                                   <!-- <span class="change">修改</span>  -->
+                                  <span>颜色分类：白色</span> <span>尺码：XS</span></span></td>
+                        <td class="cart_td_5">12.00</td>
+                        <td class="cart_td_6"><span class="cart_td_6_bg"><i class="iconfont hand">&#xe794;</i> <input id="num_4" type="text"  value="1" class="num_input" readonly="readonly"/> <i class="iconfont hand">&#xe632;</i></span></td>
+                        <td class="cart_td_7"></td>
+                        <td class="cart_td_8"><a href="javascript:void(0);">删除</a></td>
+                    </tr>
+                </table>
+                <div class="product_end">
+                     <span class="chooseall">
+                       <input class="cart-checkbox allCheckBox"  type="checkbox" value=""/>全选
+                       <a id="deleteAll" href="javascript:void(0);">删除</a>
+                     </span>
+                       <span class="product_total_num">
+                            <span>商品数量：</span>
+                            <span class="product_total_num_in">0 </span>&nbsp;件                             
+                        </span>
+                       <span class="product_total">
+                           <span>商品总价（不含运费）：</span>
+                           <span class="total">0 </span>&nbsp;元                              
+                       </span>
+                       <input type="button" class="settlement" value="结算">
+
+                </div>
+            </form>
+          </div>
+       </section>
+       <section class="prom">
+
+       </section>
+       <footer class="footer">
+
+       </footer>
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/cart.js"></script>
+</html>
