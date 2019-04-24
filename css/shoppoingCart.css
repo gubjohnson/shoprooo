@@ -101,7 +101,7 @@
 }
 
 @media screen and (max-width: 474px) and (min-width: 320px) {
-  .input-group {
+  .shopping-cart-item .input-group {
     width: 110%;
   }
 
