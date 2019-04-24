@@ -291,7 +291,7 @@ input[type="checkbox"] {
 }
 
 .shopping-cart-item {
-  /* border: 1px solid #dedede; */
+  margin-top: 10px;
 }
 .shopping-cart-item .cart_td_4 {
   color: #bdb4b4;
